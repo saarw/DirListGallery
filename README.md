@@ -1,9 +1,9 @@
 # DirListGallery
 Copy DirListGallery to any website that supports directory listings to easily share image galleries by uploading them to subdirectories of the gallery page on the site.
 
-Assume you have a website with image galleries like
-/gallery1
-/gallery2
+Assume you have a website with image galleries like   
+/gallery1   
+/gallery2   
 
 1. Copy the files in the ```build``` directory into the root of the website, or the directory above your galleries if they are not at the root.
 2. You can now share links to the galleries with a path like ```/#/gallery1```. If your galleries are in a subdirectory, say /galleries/gallery1, you should copy DirListGallery to the ```/galleries``` directory and the links will look like ```/galleries/#/gallery1```
