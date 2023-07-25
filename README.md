@@ -1,5 +1,7 @@
 # DirListGallery
-Share image galleries from your own website as easily as using cloud services like Google Drive or Dropbox. Copy DirListGallery to any website that supports directory listings and you can share image galleries by uploading them to subdirectories on the site.
+Share image galleries from your own website as easily as using cloud services like Google Drive or Dropbox. Copy DirListGallery to any website that supports directory listings and you can share image galleries by uploading them to subdirectories on the site.   
+
+[Example Gallery](https://betweentribes.com/galleries/#/gallery1)   
 
 Assume you have a website with image galleries like   
 ```/gallery1```   
