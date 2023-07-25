@@ -21,7 +21,7 @@ Disallow: /galleries/
 ```
 
 ## How it works and how to customize
-The gallery is based on React and React Router. It fetches the directory listing of gallery directories specified by the hash-path.
+The gallery is an app based on React and React Router. The app fetches the directory listings of gallery subdirectories below the app page path, specified by the hash-component of the path, and displays all images ending with ```.jpg```.
 
 ### Customize
 Clone the repo and run ```npm install```in the root.
