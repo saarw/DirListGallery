@@ -2,23 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  width: 200px;
-  height: 56px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-}
-
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: top;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-body {
   display: flex;
   width: 100%;
@@ -29,8 +12,9 @@
 .Gallery-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 1000px) {
@@ -39,7 +23,87 @@
   }
 }
 
+.Gallery-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.Gallery-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.Gallery-title h1 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Gallery-count {
+  font-size: 13px;
+  color: #6b6b70;
+}
+
+.Download-button {
+  flex-shrink: 0;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.Download-button:disabled {
+  background: #a8a8ad;
+  cursor: default;
+}
+
+.Gallery-notice {
+  margin: 10px 14px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #fff4e0;
+  color: #7a4d00;
+  font-size: 14px;
+}
+
+.Gallery-status {
+  padding: 48px 20px;
+  color: #6b6b70;
+  font-size: 15px;
+}
+
+.Gallery-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 12px;
+}
+
 .Gallery-image {
   max-width: 100%;
-  margin-bottom: 15px;
+  display: block;
+  border-radius: var(--card-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
